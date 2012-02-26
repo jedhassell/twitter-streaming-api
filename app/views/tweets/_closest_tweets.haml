@@ -4,5 +4,5 @@
   %table
     -for tweet in @tweets
       %tr
-        %td= image_tag(tweet.pic)
+        %td= image_tag(tweet.pic, :class => 'tweet_pic')
         %td= tweet.text

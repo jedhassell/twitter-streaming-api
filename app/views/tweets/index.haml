@@ -1,7 +1,35 @@
-%label Longitude
-= text_field_tag(:longitude)
-%label Latitude
-= text_field_tag(:latitude)
-= button_tag 'Submit', id: 'submit'
+= link_to image_tag('fork_me.png', class: 'fork_me', id: 'fork_me'), 'https://github.com/jedhassell/twitter-streaming-api'
+.container
+  .banner= link_to 'TweetStreamer', 'https://github.com/jedhassell/twitter-streaming-api'
 
-#tweet_container
+  %p.sub_banner Twitter Streaming API to MongoDB + map views
+
+  %p.header
+    Documentation
+    %p.inside= link_to 'RDoc', 'https://github.com/jedhassell/twitter-streaming-api'
+
+  %p.header
+    Download
+    %p.inside
+    You can also clone the project with Git by running:
+    .git_link $ git clone git://github.com/jedhassell/twitter-streaming-api
+
+  .footer
+    get the source code on GitHub :
+    = link_to('https://github.com/jedhassell/twitter-streaming-api', 'https://github.com/jedhassell/twitter-streaming-api')
+
+  %p.header
+
+
+  .try_it_out
+    .header
+      Try It Out
+      %p.inside= link_to "View Map", :action => 'map'
+    %p or enter coordinates below
+    %label Longitude:
+    = text_field_tag(:longitude)
+    %label Latitude:
+    = text_field_tag(:latitude)
+    = button_tag 'Submit', id: 'submit'
+
+  #tweet_container

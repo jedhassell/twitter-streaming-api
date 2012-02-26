@@ -1,3 +1,131 @@
 // Place all the styles related to the Tweets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$light_color: #f4f3f0;
+
+body {
+
+  background-color: $light_color;
+}
+
+#map_side_bar {
+  width: 300px;
+  float: left;
+  overflow-y: auto;
+  div.infowindow {
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+  }
+  .selected {
+    background-color: black;
+    color: $light_color;
+  }
+  p {
+    min-height: 40px;
+  }
+  div.default_text{
+    text-align: center;
+    margin: 15px;
+    font-size: 20px;
+  }
+}
+
+img.tweet_pic {
+  width: 48px;
+  height: 48px;
+}
+
+#map_canvas {
+
+}
+
+div.infowindow {
+  padding: 5px;
+
+  img {
+    float: left;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+  }
+  div {
+    margin: 5px;
+  }
+}
+
+img#fork_me {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: 0px;
+}
+
+.container {
+  margin: 50px auto;
+  width: 700px;
+  .banner a {
+    cursor: auto;
+    font-size: 61px;
+    font-weight: bold;
+    width: auto;
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+  a {
+    color: inherit;
+  }
+  .sub_banner {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-style: italic;
+  }
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 19px;
+  }
+  .inside {
+    font-weight: normal;
+  }
+  .git_link {
+  /*background-attachment: scroll;*/
+  /*background-clip: border-box;*/
+    background-color: black;
+  /*background-image: none;*/
+  /*background-origin: padding-box;*/
+    color: #f4f3f0;
+  /*display: block;*/
+    font-family: monospace;
+    height: 15px;
+    margin-bottom: 13px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    white-space: pre;
+    width: 670px;
+  }
+
+  .footer {
+    font-style: italic;
+    height: 18px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .try_it_out {
+    .header {
+      /*padding-bottom: 15px;*/
+    }
+  }
+}

@@ -1,14 +1,15 @@
-require 'event_machine_jed'
+require 'event_machine_stream_reader_with_fiber'
 require 'event_machine_stream_reader'
 
 namespace :twitter do
-  desc "get tweets"
-  task(:get_tweets => :environment) do
-    EventMachineJed.jed
+
+  desc "get tweets using fiber"
+  task(:get_tweets_with_fiber => :environment) do
+    EventMachineStreamReaderWithFiber.runner
   end
 
-  desc "EventMachineStreamReader"
-  task(:test2 => :environment) do
+  desc "get tweets"
+  task(:get_tweets => :environment) do
     EventMachineStreamReader.runner
   end
 
