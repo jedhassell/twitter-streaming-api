@@ -1,0 +1,8 @@
+-if @tweets.is_a?(String)
+  = @tweets
+-else
+  %table
+    -for tweet in @tweets
+      %tr
+        %td= image_tag(tweet.pic)
+        %td= tweet.text

@@ -1,10 +1,10 @@
 development:
   host: localhost
-  database: banjo_development
+  database: twitter
 
 test:
   host: localhost
-  database: banjo_test
+  database: twitter_test
 
 # set these environment variables on your prod server
 production:

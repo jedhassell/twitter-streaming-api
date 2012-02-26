@@ -9,6 +9,15 @@ gem 'rails', '3.2.1'
 gem "mongoid", "~> 2.4"
 gem "bson_ext", "~> 1.5"
 gem "eventmachine"
+gem "mongoid_spacial"
+gem "em-http-request"
+gem "yajl-ruby"
+gem "haml"
+
+group :test, :development do
+  gem "rspec-rails"
+end
+#gem "em-synchrony"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -37,4 +46,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+#gem 'ruby-debug19', :require => 'ruby-debug'
