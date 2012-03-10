@@ -1,4 +1,4 @@
-Banjo::Application.routes.draw do
+TweetStreamer::Application.routes.draw do
   # resources :tweets
 
 #  match 'tweets/closest_tweets' => 'tweets/closest_tweets'

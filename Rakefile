@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Banjo::Application.load_tasks
+TweetStreamer::Application.load_tasks
