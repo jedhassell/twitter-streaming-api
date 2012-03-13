@@ -1,1 +1,1 @@
-web: bundle exec rails server -p 80
+web: bundle exec rails server -e production
