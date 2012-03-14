@@ -33,7 +33,7 @@ add_markers = (data) ->
 
   for tweet in data
     new_marker = new google.maps.Marker
-      position: new google.maps.LatLng(tweet.location[1], tweet.location[0])
+      position: new google.maps.LatLng(tweet.location.lat, tweet.location.lng)
       map: map
       tweet_id: tweet._id
 
