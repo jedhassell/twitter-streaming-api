@@ -1,11 +1,6 @@
 development:
-    host: ds031587.mongolab.com
-    port: 31587
-    username: jedhassell
-    password: dbpassword
-    database: heroku_app3252069
-#  host: localhost
-#  database: twitter
+  host: localhost
+  database: twitter
 
 test:
   host: localhost
@@ -17,7 +12,7 @@ production:
     port: 31587
     username: jedhassell
     password: dbpassword
-    database: heroku_app3252069
+    database: tweets
 
 
 
