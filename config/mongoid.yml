@@ -1,11 +1,11 @@
 development:
-    host: ds031587.mongolab.com
-    port: 31587
-    username: jedhassell
-    password: dbpassword
-    database: tweets
-#  host: localhost
-#  database: twitter
+#    host: ds031587.mongolab.com
+#    port: 31587
+#    username: jedhassell
+#    password: dbpassword
+#    database: tweets
+  host: localhost
+  database: twitter
 
 test:
   host: localhost
@@ -13,8 +13,8 @@ test:
 
 # set these environment variables on your prod server
 production:
-    host: ds031587.mongolab.com
-    port: 31587
+    host: ds031407.mongolab.com
+    port: 31407
     username: jedhassell
     password: dbpassword
     database: tweets
