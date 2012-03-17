@@ -22,7 +22,7 @@ class EventMachineStreamReader
                               location: [hash['coordinates']['coordinates'][0], hash['coordinates']['coordinates'][1]],
                               pic: hash['user']['profile_image_url'],
                               screen_name: hash['user']['screen_name'],
-                              created_at: DateTime.parse(hash['created_at'])
+                              created_at: Time.parse(hash['created_at'])
                           })
           end
         end
