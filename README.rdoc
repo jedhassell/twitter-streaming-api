@@ -4,7 +4,7 @@ TweetStreamer is a Rails app that uses EventMachine to process Twitter's
 Streaming API.  You can view the results on the home page or you can view
 them on a Google Map.
 
-demo :: http://high-flower-9912.herokuapp.com
+demo :: http://tweetstreamer.herokuapp.com/
 
 
 == Getting Started
