@@ -13,11 +13,12 @@ test:
 
 # set these environment variables on your prod server
 production:
-    host: ds031407.mongolab.com
-    port: 31407
-    username: jedhassell
-    password: dbpassword
-    database: tweets
+  uri: <%= ENV['MONGOLAB_URI'] %>
+#    host: ds031407.mongolab.com
+#    port: 31407
+#    username: jedhassell
+#    password: dbpassword
+#    database: tweets
 
 
 
